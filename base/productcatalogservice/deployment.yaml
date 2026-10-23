@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: productcatalogservice
-          image: nishanthhj02/productcatalogservice:latest
+          image: nishanthhj02/productcatalogservice:e9fe62d
 
           ports:
             - containerPort: 3550
