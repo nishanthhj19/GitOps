@@ -1,0 +1,28 @@
+
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: productcatalogservice
+  labels:
+    app: productcatalogservice
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: productcatalogservice
+
+  template:
+    metadata:
+      labels:
+        app: productcatalogservice
+
+    spec:
+      containers:
+        - name: productcatalogservice
+          image: nishanthhj02/productcatalogservice:latest
+
+          ports:
+            - containerPort: 3550
