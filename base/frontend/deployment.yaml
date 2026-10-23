@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: nishanthhj02/frontend:4318ada2f238d8560cd6c308c531bc88a57e3279
+          image: nishanthhj02/frontend:f007c42af448b3da9dc8d6fe9dc54d09376566ef
           ports:
             - containerPort: 8080
